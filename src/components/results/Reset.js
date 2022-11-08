@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Reset({ bill, people, setBill, setPeople, setTip }) {
+function Reset({ bill, tip, people, setBill, setPeople, setTip }) {
   const handleClick = () => {
     setBill("");
     setPeople("");
@@ -9,7 +9,10 @@ function Reset({ bill, people, setBill, setPeople, setTip }) {
   };
 
   return (
-    <Button onClick={handleClick} isActive={bill || people ? true : false}>
+    <Button
+      onClick={handleClick}
+      isActive={bill || people || tip ? true : false}
+    >
       Reset
     </Button>
   );

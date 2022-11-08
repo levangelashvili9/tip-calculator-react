@@ -19,6 +19,7 @@ function Results({
         <DisplayResults tipValue={tipValue} totalValue={totalValue} />
         <Reset
           bill={bill}
+          tip={tip}
           people={people}
           setBill={setBill}
           setTip={setTip}
